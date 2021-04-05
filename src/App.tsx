@@ -14,12 +14,12 @@ function App() {
         <p>Hello Vite + React!</p>
         <p>
           <button onClick={() => setCount((count) => count + 1)}>
-            countasdsa is: {count}
+            count is: {count}
           </button>
         </p>
-        dadas
+
         <p>
-          Edit <code>App.tsx</code> and save to testajejahjdh test HMR updates.
+          E dit <code>App.tsx </code> and save to test HMR updates.
         </p>
         <p>
           <a

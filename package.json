@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-typescript-eslint",
+  "name": "vite-reactts-eslint-prettier",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

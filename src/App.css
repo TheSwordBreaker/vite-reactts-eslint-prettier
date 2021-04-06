@@ -1,3 +1,10 @@
+:root {
+  --primay: black;
+  --bg-primay: white;
+
+  --link: #2a0b0b;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +12,29 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+p {
+  margin: 20px 0px;
+}
+
+.header {
+  font-size: 3rem;
+}
+
+.body {
+  margin: 20px 0 10px;
+  font-size: 0.9rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 35px;
+
+  background: #845ec2;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,11 +51,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
+  background: var(--bg-primay);
+  color: var(--primay);
 }
 
 .App-link {
   color: #61dafb;
+  color: var(--link);
 }
 
 @keyframes App-logo-spin {

@@ -30,7 +30,8 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5",
-    "vite": "^2.4.1"
+    "vite": "^2.4.1",
+    "vite-tsconfig-paths": "^3.3.17"
   },
   "pre-commit": "lint",
   "license": "MIT"

@@ -5,21 +5,20 @@
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 
-import { render, screen } from '../test-utils';
-import App from './App';
+import { render, screen } from '../../../test-utils';
+import CrabButton from '../CrabButton';
 
-describe('App', () => {
-  test('renders App component with 2 images', () => {
-    render(<App />);
+describe('CrabButton', () => {
+  test('renders CrabButton component with 2 images', () => {
+    render(<CrabButton />);
 
     const images = screen.getAllByRole('img');
     expect(images).toHaveLength(2);
   });
 
   test('the counter increments as expected', () => {
-    render(<App />);
+    render(<CrabButton />);
     const button = screen.getByRole('button');
-
     expect(button.textContent).toBe('Clicked 0 times');
 
     userEvent.click(button);

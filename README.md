@@ -1,15 +1,38 @@
-# Vite + React + Typescript + Eslint + Prettier
+# React / Typescript / Vite / Eslint / Prettier / Styled Components
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
-
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
-
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+Forked from [TheSwordBreaker/vite-reactts-eslint-prettier](https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier) with added support for [Styled Components](https://styled-components.com/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
 
 ## Installation
 
-Clone the repo and run `yarn install`
+Follow steps for [creating a new repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
+
+![use template button](https://docs.github.com/assets/cb-36544/images/help/repository/use-this-template-button.png)
+
+Clone the new repository:
+
+```bash
+git clone git@github.com:yourName/whatcha-gonna-call-it.git
+```
+
+Install dependencies:
+
+```bash
+cd whatcha-gonna-call-it
+yarn install
+```
 
 ## Start
 
-After the successfull installation of the packages: `yarn dev`
+After installation:
+
+```bash
+yarn dev
+```
+
+## Test
+
+Runs tests with Jest and RTL support
+
+```bash
+yarn test
+```

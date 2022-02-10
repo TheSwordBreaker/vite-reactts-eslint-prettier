@@ -2,7 +2,7 @@
   "name": "vite-reactts-eslint-prettier-styled-components",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "jest",

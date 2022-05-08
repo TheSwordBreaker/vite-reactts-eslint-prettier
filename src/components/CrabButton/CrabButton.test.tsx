@@ -6,14 +6,14 @@ import userEvent from '@testing-library/user-event';
 import React from 'react';
 
 import { render, screen } from '../../../test-utils';
-import CrabButton from '../CrabButton';
+import CrabButton from './CrabButton';
 
 describe('CrabButton', () => {
-  test('renders CrabButton component with 2 images', () => {
+  test('renders CrabButton component with 1 image', () => {
     render(<CrabButton />);
 
     const images = screen.getAllByRole('img');
-    expect(images).toHaveLength(2);
+    expect(images).toHaveLength(1);
   });
 
   test('the counter increments as expected', () => {

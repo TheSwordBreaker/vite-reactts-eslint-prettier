@@ -1,19 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import crab from '../../crab.svg';
+import crab from './crab.svg';
 
 const StylishCrab = styled.img`
   max-width: 100px;
-`;
-
-const CenterBox = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
 `;
 
 const Button = styled.button`
@@ -30,6 +21,7 @@ const Button = styled.button`
   min-width: 160px;
   &:hover {
     background-color: #4682b430;
+    cursor: pointer;
   }
   &:active {
     border-left: 2px solid #245782;
@@ -43,13 +35,10 @@ const CrabButton = (): JSX.Element => {
 
   return (
     <>
-      <CenterBox>
+      <Button onClick={handleClick}>
         <StylishCrab src={crab} alt="crab emoji" />
-        <Button onClick={handleClick}>
-          Clicked {count} time{count !== 1 ? 's' : ''}
-        </Button>
-        <StylishCrab src={crab} alt="crab emoji" />
-      </CenterBox>
+        Clicked {count} time{count !== 1 ? 's' : ''}
+      </Button>
     </>
   );
 };

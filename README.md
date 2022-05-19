@@ -1,6 +1,10 @@
-# React / Typescript / Vite / Eslint / Prettier / Styled Components
+# React Project Starter
 
-Forked from [TheSwordBreaker/vite-reactts-eslint-prettier](https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier) with added support for [Styled Components](https://styled-components.com/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
+Forked from [TheSwordBreaker/vite-reactts-eslint-prettier](https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier) with added support for:
+
+- [Styled Components](https://styled-components.com/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [React Query Library](https://react-query.tanstack.com/) (with tests using [MSW](https://mswjs.io/) for custom hooks)
 
 ## Installation
 
@@ -31,8 +35,17 @@ yarn dev
 
 ## Test
 
-Runs tests with Jest and RTL support
+Runs tests with Jest, RTL, and MSW support
 
 ```bash
 yarn test
+```
+
+## Build
+
+Build for production
+
+```bash
+yarn build
+yarn serve # preview the build on port 4173
 ```

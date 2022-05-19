@@ -30,7 +30,7 @@ yarn install
 After installation:
 
 ```bash
-yarn dev
+yarn start
 ```
 
 ## Test

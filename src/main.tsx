@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 // mock response when in development
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'test') {
   worker.start();
 }
 

@@ -10,6 +10,8 @@ I found out about Vite and I wanted to have a boilerplate for the technologies t
 
 Clone the repo and run `yarn install`
 
+or Run command "npx degit TheSwordBreaker/vite-reactts-eslint-prettier codebase"
+
 ## Start
 
 After the successfull installation of the packages: `yarn dev`

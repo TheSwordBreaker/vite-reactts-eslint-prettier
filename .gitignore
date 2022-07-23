@@ -5,3 +5,10 @@ dist-ssr
 *.local
 node_modules/*
 .vscode/*
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

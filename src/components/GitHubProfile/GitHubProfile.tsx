@@ -1,5 +1,5 @@
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import React from 'react';
-import { ReactQueryDevtools } from 'react-query/devtools';
 
 import { useGetGitHubProfile } from './useGetGitHubProfile';
 

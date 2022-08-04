@@ -1,5 +1,5 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import React from 'react';
-import { QueryClient, QueryClientProvider } from 'react-query';
 
 import CrabButton from './components/CrabButton/CrabButton';
 import GitHubProfile from './components/GitHubProfile/GitHubProfile';
@@ -10,8 +10,8 @@ const App = (): JSX.Element => {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <a href="https://github.com/nickFalcone/vite-reactts-eslint-prettier-styled-components">
-          https://github.com/nickFalcone/vite-reactts-eslint-prettier-styled-components
+        <a href="https://github.com/nickFalcone/init-react-typescript">
+          https://github.com/nickFalcone/init-react-typescript
         </a>
         <p>A template frontend repo with the following tools / libraries set up:</p>
         <ul>
@@ -34,7 +34,7 @@ const App = (): JSX.Element => {
             <a href="https://styled-components.com/">Styled Components</a>
           </li>
           <li>
-            <a href="https://react-query.tanstack.com/">React Query</a>
+            <a href="https://react-query.tanstack.com/">React Query v4</a>
           </li>
           <li>
             <a href="https://mswjs.io/">Mock Service Worker</a>

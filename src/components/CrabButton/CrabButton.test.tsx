@@ -16,12 +16,12 @@ describe('CrabButton', () => {
     expect(images).toHaveLength(1);
   });
 
-  test('the counter increments as expected', () => {
+  test('the counter increments as expected', async () => {
     render(<CrabButton />);
     const button = screen.getByRole('button');
     expect(button.textContent).toBe('Clicked 0 times');
 
-    userEvent.click(button);
+    await userEvent.click(button);
     expect(button.textContent).toBe('Clicked 1 time');
   });
 });

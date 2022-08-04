@@ -4,3 +4,7 @@ dist
 dist-ssr
 *.local
 node_modules/*
+.yarn
+.husky
+public
+__mocks__

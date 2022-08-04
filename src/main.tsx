@@ -1,8 +1,8 @@
 import './index.css';
 
 import { worker } from 'mocks/browser';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
 import App from './App';
 
@@ -11,9 +11,9 @@ if (process.env.NODE_ENV === 'test') {
   worker.start();
 }
 
-ReactDOM.render(
-  <React.StrictMode>
+const container = document.getElementById('container') as Element;
+createRoot(container).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </StrictMode>,
 );

@@ -2,36 +2,63 @@
 
 A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
-
 I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
 
 ## Installation
 
-Clone the repo and run `yarn install`
+Clone the repo and run
 
-or Run command
-
+```bash
+npm install
 ```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
+
+or run command
+
+```bash
+npx degit amelinium23/vite-reactts-eslint-prettier project-name
 ```
 
 ## Start
 
-After the successfull installation of the packages: `yarn dev`
+After the successful installation of the packages: `yarn dev`
 
 ## Steps in Vscode
-
-#### (works with better with this template)
 
 1. Install Eslint and prettier extension for vs code.
 2. Make Sure Both are enabled
 3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
 4. Enable formatOnSave of vs code
 5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
+   If Everything is Good Then It Should Work, but let me new if something else happens
 
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
+Here are basic settings for VS Code to properly work:
+Just in `.vscode` directory create `settings.json` and paste below there:
 
-If Everything is Good Then It Should Work, but let me new if something else happens
+```json
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.eol": "\n"
+}
+```
 
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
+(Optional) You can create `launch.json` in `.vscode` directory to launch project for use run and debug tab in vscode:
+
+```json
+{
+  "configurations": [
+    {
+      "command": "npm run dev",
+      "name": "Run dev server",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
+}
+```
+
+Base on [template by theSwordBreaker](https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier) ❤️

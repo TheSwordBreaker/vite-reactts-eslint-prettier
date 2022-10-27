@@ -20,7 +20,11 @@ npx degit amelinium23/vite-reactts-eslint-prettier project-name
 
 ## Start
 
-After the successful installation of the packages: `yarn dev`
+After the successful installation of the packages:
+
+```sh
+npm run dev
+```
 
 ## Steps in Vscode
 
